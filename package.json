@@ -1,0 +1,37 @@
+{
+  "name": "angle-normals",
+  "version": "1.0.0",
+  "description": "Compute mesh normals using angle weights",
+  "main": "angle-normals.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bunny": "^1.0.1",
+    "mesh-viewer": "^1.0.0",
+    "simplicial-complex": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikolalysenko/angle-normals.git"
+  },
+  "keywords": [
+    "mesh",
+    "normal",
+    "simplicial",
+    "complex",
+    "angle",
+    "weight",
+    "vertex",
+    "rendering",
+    "graphics"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/angle-normals/issues"
+  },
+  "homepage": "https://github.com/mikolalysenko/angle-normals#readme"
+}

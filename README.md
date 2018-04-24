@@ -28,5 +28,19 @@ Computes vertex normals from for a mesh.
 
 **Returns** An array of normals
 
+## Packed data
+
+If your data is stored in packed, flattened arrays of cells and positions, you may instead require the packed-data variant:
+
+#### `require('angle-normals/packed')([normals, ] cells, positions)`
+
+Computes vertex normals for flattened arrays of cells and positions.
+
+* `normals` optional output array. Length matches that of `positions`.
+* `cells` a flat array of cells
+* `positions` a flat array of the mesh's vertices
+
+**Returns** A flat array of normals
+
 # License
 (c) 2015 Mikola Lysenko. MIT License

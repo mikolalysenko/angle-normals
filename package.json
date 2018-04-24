@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Compute mesh normals using angle weights",
   "main": "angle-normals.js",
-  "dependencies": {
-  },
   "devDependencies": {
+    "array-pack-2d": "^1.0.0",
     "bunny": "^1.0.1",
     "mesh-viewer": "^1.0.0",
     "simplicial-complex": "^1.0.0"

@@ -16,14 +16,25 @@ function mulAdd(dest, s, x, y, z) {
   dest[2] += s * z
 }
 
-function angleNormals(cells, positions) {
+function angleNormals(cells, positions, out) {
   var numVerts = positions.length
   var numCells = cells.length
-
-  //Allocate normal array
-  var normals = new Array(numVerts)
-  for(var i=0; i<numVerts; ++i) {
-    normals[i] = [0,0,0]
+  
+  var normals
+  if (out) {
+    //Zero out the existing array    
+    for(var i=0; i<numVerts; ++i) {
+      out[i][0] = 0
+      out[i][1] = 0
+      out[i][2] = 0
+    }
+    normals = out
+  } else {
+    //Allocate normal array
+    normals = new Array(numVerts)
+    for(var i=0; i<numVerts; ++i) {
+      normals[i] = [0,0,0]
+    }
   }
 
   //Scan cells, and
